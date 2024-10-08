@@ -1,0 +1,100 @@
+/* Basic Navbar Styles */
+.navbar-container {
+	background-color: #A04747;
+	color: #fff;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+  }
+  
+  .nav-links {
+	list-style: none;
+	display: flex;
+  }
+  
+  .nav-links li {
+	margin-right: 20px;
+  }
+  
+  .nav-links a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2em;
+	transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+	color: #d48686;
+  }
+  .blog-select {
+	background-color: #A04747;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 5px;
+	font-size: 1.1em;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .blog-select option {
+	color: #000;
+  }
+  
+  /* Hover effect for select dropdown */
+  .blog-select:hover {
+	background-color: #ffd700;
+	color: #000;
+  }
+  
+  /* Hide Navigation Links on Mobile */
+  @media (max-width: 768px) {
+	.nav-links {
+	  display: none;
+	  flex-direction: column;
+	  position: absolute;
+	  top: 60px;
+	  right: 0;
+	  background-color: #A04747;
+	  width: 100%;
+	  text-align: center;
+	  border-radius: 0 0 10px 10px;
+	}
+  
+	.nav-links.open {
+	  display: flex; /* Show when 'open' class is added */
+	}
+  
+	.nav-links li {
+	  margin: 10px 0;
+	}
+  
+	.nav-links a {
+	  font-size: 1.1em;
+	  padding: 10px 0;
+	}
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger-menu {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+  }
+  
+  .hamburger-menu .bar {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 4px 0;
+	transition: 0.4s;
+  }
+  
+  @media (max-width: 768px) {
+	.hamburger-menu {
+	  display: flex;
+	}
+  }
+  

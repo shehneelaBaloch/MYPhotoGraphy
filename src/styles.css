@@ -1,0 +1,340 @@
+/* Global Settings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Introduction Section */
+.introduction {
+  height: 100vh;
+  background-image: url('https://hips.hearstapps.com/hmg-prod/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.explore-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color:  #A04747;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color:  #A04747;
+}
+
+/* Responsive Design for Introduction */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .explore-button {
+    font-size: 0.9rem;
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Membership Section */
+.membership {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.membership h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.membership-option {
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.join-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color:  #A04747;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background-color:  #A04747;
+}
+
+/* Footer Section */
+.footer {
+  background-color:  #A04747;
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #f04e23;
+  color: white;
+}
+
+.explore-button, .join-button {
+  transition: background-color 0.3s;
+}
+
+.explore-button:hover, .join-button:hover {
+  background-color: #d43b1b;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 20px;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Membership Section */
+/* Membership Section */
+.membership {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.membership h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.membership-option {
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+.join-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color:  #A04747;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background-color:  #A04747;
+}
+
+
+
+/* Blog Section */
+.blog {
+  padding: 20px;
+}
+
+.blog-post {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.blog-post .read-more {
+  color:  #A04747;
+  text-decoration: none;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-form form {
+  display: inline-block;
+  max-width: 400px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #A04747;
+  color: white;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 20px;
+}
+
+.faq-item {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .membership-option {
+    max-width: 90%; /* Increased width on smaller screens */
+    margin: 0 auto; /* Center the boxes */
+    padding: 30px;  /* Adjust padding to fit the larger width */
+  }
+}
